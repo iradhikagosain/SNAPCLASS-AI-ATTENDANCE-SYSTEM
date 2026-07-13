@@ -77,7 +77,7 @@ def style_base_layout():
             }
                 
 
-            button{
+            button[kind="primary"]{
                 border-radius: 1.5rem !important;
                 background-color: #5865F2 !important;
                 color: white !important;

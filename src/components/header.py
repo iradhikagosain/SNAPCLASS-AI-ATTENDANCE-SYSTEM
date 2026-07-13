@@ -40,11 +40,37 @@ def header_home():
         ">
             {logo_html}
             <h1 style="text-align:center;color:#FFFFFF;margin-top:12px;">
-                SnapClass
+                Snap Class
             </h1>
             <p style="text-align:center;color:#E4E6FF;font-size:1.15rem;font-weight:500;margin-top:-2px;">
                 Smart classrooms, made simple.
             </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def header_dashboard():
+    logo_uri = _load_logo_as_data_uri()
+    logo_html = (
+        f'<img src="{logo_uri}" alt="SnapClass logo" style="height:90px;" />'
+        if logo_uri
+        else ""
+    )
+
+    st.markdown(
+        f"""
+        <div style="
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap: 10px;
+        ">
+            {logo_html}
+            <h2 style="text-align:left;margin-top:12px;color:#5865F2">
+                Snap Class
+            </h2>
         </div>
         """,
         unsafe_allow_html=True,

@@ -1,3 +1,6 @@
+# web app
+streamlit
+
 # utility
 numpy
 pandas
@@ -19,5 +22,7 @@ segno
 # image processing
 pillow
 
-# web app
-streamlit
+
+#voice
+librosa
+resemblyzer
